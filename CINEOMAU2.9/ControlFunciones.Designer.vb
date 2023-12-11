@@ -24,8 +24,8 @@ Partial Class ControlFunciones
     Private Sub InitializeComponent()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dtpFechaBusqueda = New System.Windows.Forms.DateTimePicker()
+        Me.dvgFunciones = New System.Windows.Forms.DataGridView()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.btnBuscarFuncion = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -34,7 +34,6 @@ Partial Class ControlFunciones
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cmbNuevoHorario = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.cmbNuevaDecha = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.cmbNuevaPelicula = New System.Windows.Forms.ComboBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -42,26 +41,27 @@ Partial Class ControlFunciones
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnEditarFuncion = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmbEditarPelicula = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.cmbEditarHorario = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.cmbEditarSala = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.cmbEditarFuncion = New System.Windows.Forms.ComboBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.cmbEliminarFuncion = New System.Windows.Forms.ComboBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.btnEliminarFuncion = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.btnRegresar = New System.Windows.Forms.Button()
+        Me.dptNuevaFecha = New System.Windows.Forms.DateTimePicker()
+        Me.dtpEditarFecha = New System.Windows.Forms.DateTimePicker()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dvgFunciones, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -86,24 +86,24 @@ Partial Class ControlFunciones
         Me.Label2.TabIndex = 38
         Me.Label2.Text = "Selecciona fecha"
         '
-        'DateTimePicker1
+        'dtpFechaBusqueda
         '
-        Me.DateTimePicker1.CalendarForeColor = System.Drawing.Color.Teal
-        Me.DateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.DateTimePicker1.CalendarTrailingForeColor = System.Drawing.Color.Teal
-        Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.DateTimePicker1.Location = New System.Drawing.Point(147, 102)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 39
+        Me.dtpFechaBusqueda.CalendarForeColor = System.Drawing.Color.Teal
+        Me.dtpFechaBusqueda.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dtpFechaBusqueda.CalendarTrailingForeColor = System.Drawing.Color.Teal
+        Me.dtpFechaBusqueda.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpFechaBusqueda.Location = New System.Drawing.Point(147, 102)
+        Me.dtpFechaBusqueda.Name = "dtpFechaBusqueda"
+        Me.dtpFechaBusqueda.Size = New System.Drawing.Size(200, 20)
+        Me.dtpFechaBusqueda.TabIndex = 39
         '
-        'DataGridView1
+        'dvgFunciones
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(16, 137)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(498, 176)
-        Me.DataGridView1.TabIndex = 40
+        Me.dvgFunciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dvgFunciones.Location = New System.Drawing.Point(16, 137)
+        Me.dvgFunciones.Name = "dvgFunciones"
+        Me.dvgFunciones.Size = New System.Drawing.Size(498, 176)
+        Me.dvgFunciones.TabIndex = 40
         '
         'Panel3
         '
@@ -188,14 +188,6 @@ Partial Class ControlFunciones
         Me.Label5.Text = "Fecha"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'cmbNuevaDecha
-        '
-        Me.cmbNuevaDecha.FormattingEnabled = True
-        Me.cmbNuevaDecha.Location = New System.Drawing.Point(694, 232)
-        Me.cmbNuevaDecha.Name = "cmbNuevaDecha"
-        Me.cmbNuevaDecha.Size = New System.Drawing.Size(121, 21)
-        Me.cmbNuevaDecha.TabIndex = 142
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -268,13 +260,13 @@ Partial Class ControlFunciones
         Me.Label7.Text = "Pelicula"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'ComboBox1
+        'cmbEditarPelicula
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(147, 468)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 155
+        Me.cmbEditarPelicula.FormattingEnabled = True
+        Me.cmbEditarPelicula.Location = New System.Drawing.Point(147, 468)
+        Me.cmbEditarPelicula.Name = "cmbEditarPelicula"
+        Me.cmbEditarPelicula.Size = New System.Drawing.Size(121, 21)
+        Me.cmbEditarPelicula.TabIndex = 155
         '
         'Label8
         '
@@ -288,14 +280,6 @@ Partial Class ControlFunciones
         Me.Label8.Text = "Fecha"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(147, 441)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 153
-        '
         'Label9
         '
         Me.Label9.AutoSize = True
@@ -308,13 +292,13 @@ Partial Class ControlFunciones
         Me.Label9.Text = "Horario"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'ComboBox3
+        'cmbEditarHorario
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(147, 414)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox3.TabIndex = 151
+        Me.cmbEditarHorario.FormattingEnabled = True
+        Me.cmbEditarHorario.Location = New System.Drawing.Point(147, 414)
+        Me.cmbEditarHorario.Name = "cmbEditarHorario"
+        Me.cmbEditarHorario.Size = New System.Drawing.Size(121, 21)
+        Me.cmbEditarHorario.TabIndex = 151
         '
         'Label10
         '
@@ -328,13 +312,13 @@ Partial Class ControlFunciones
         Me.Label10.Text = "Sala"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'ComboBox4
+        'cmbEditarSala
         '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(147, 387)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox4.TabIndex = 149
+        Me.cmbEditarSala.FormattingEnabled = True
+        Me.cmbEditarSala.Location = New System.Drawing.Point(147, 387)
+        Me.cmbEditarSala.Name = "cmbEditarSala"
+        Me.cmbEditarSala.Size = New System.Drawing.Size(121, 21)
+        Me.cmbEditarSala.TabIndex = 149
         '
         'Label11
         '
@@ -359,13 +343,13 @@ Partial Class ControlFunciones
         Me.Label12.Text = "ID Función"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'ComboBox5
+        'cmbEditarFuncion
         '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(147, 360)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox5.TabIndex = 159
+        Me.cmbEditarFuncion.FormattingEnabled = True
+        Me.cmbEditarFuncion.Location = New System.Drawing.Point(147, 360)
+        Me.cmbEditarFuncion.Name = "cmbEditarFuncion"
+        Me.cmbEditarFuncion.Size = New System.Drawing.Size(121, 21)
+        Me.cmbEditarFuncion.TabIndex = 159
         '
         'Label13
         '
@@ -401,13 +385,13 @@ Partial Class ControlFunciones
         Me.Label15.Text = "ID Función"
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'ComboBox6
+        'cmbEliminarFuncion
         '
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Location = New System.Drawing.Point(448, 363)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox6.TabIndex = 163
+        Me.cmbEliminarFuncion.FormattingEnabled = True
+        Me.cmbEliminarFuncion.Location = New System.Drawing.Point(448, 363)
+        Me.cmbEliminarFuncion.Name = "cmbEliminarFuncion"
+        Me.cmbEliminarFuncion.Size = New System.Drawing.Size(121, 21)
+        Me.cmbEliminarFuncion.TabIndex = 163
         '
         'Panel4
         '
@@ -449,54 +433,76 @@ Partial Class ControlFunciones
         Me.btnRegresar.Text = "Salir"
         Me.btnRegresar.UseVisualStyleBackColor = False
         '
+        'dptNuevaFecha
+        '
+        Me.dptNuevaFecha.CalendarForeColor = System.Drawing.Color.Teal
+        Me.dptNuevaFecha.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dptNuevaFecha.CalendarTrailingForeColor = System.Drawing.Color.Teal
+        Me.dptNuevaFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dptNuevaFecha.Location = New System.Drawing.Point(694, 232)
+        Me.dptNuevaFecha.Name = "dptNuevaFecha"
+        Me.dptNuevaFecha.Size = New System.Drawing.Size(121, 20)
+        Me.dptNuevaFecha.TabIndex = 165
+        '
+        'dtpEditarFecha
+        '
+        Me.dtpEditarFecha.CalendarForeColor = System.Drawing.Color.Teal
+        Me.dtpEditarFecha.CalendarTitleForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.dtpEditarFecha.CalendarTrailingForeColor = System.Drawing.Color.Teal
+        Me.dtpEditarFecha.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpEditarFecha.Location = New System.Drawing.Point(147, 442)
+        Me.dtpEditarFecha.Name = "dtpEditarFecha"
+        Me.dtpEditarFecha.Size = New System.Drawing.Size(121, 20)
+        Me.dtpEditarFecha.TabIndex = 166
+        '
         'ControlFunciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(851, 559)
+        Me.Controls.Add(Me.dtpEditarFecha)
+        Me.Controls.Add(Me.dptNuevaFecha)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.btnRegresar)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.btnEliminarFuncion)
-        Me.Controls.Add(Me.ComboBox6)
+        Me.Controls.Add(Me.cmbEliminarFuncion)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.ComboBox5)
+        Me.Controls.Add(Me.cmbEditarFuncion)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnEditarFuncion)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cmbEditarPelicula)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.cmbEditarHorario)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.ComboBox4)
+        Me.Controls.Add(Me.cmbEditarSala)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnNuevaFuncion)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.cmbNuevaPelicula)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.cmbNuevaDecha)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.cmbNuevoHorario)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.cmbNuevaSala)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.btnBuscarFuncion)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.dvgFunciones)
+        Me.Controls.Add(Me.dtpFechaBusqueda)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "ControlFunciones"
         Me.Text = "ControlFunciones"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dvgFunciones, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -504,8 +510,8 @@ Partial Class ControlFunciones
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dtpFechaBusqueda As DateTimePicker
+    Friend WithEvents dvgFunciones As DataGridView
     Friend WithEvents Panel3 As Panel
     Friend WithEvents btnBuscarFuncion As Button
     Friend WithEvents Label1 As Label
@@ -514,7 +520,6 @@ Partial Class ControlFunciones
     Friend WithEvents Label4 As Label
     Friend WithEvents cmbNuevoHorario As ComboBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents cmbNuevaDecha As ComboBox
     Friend WithEvents Label6 As Label
     Friend WithEvents cmbNuevaPelicula As ComboBox
     Friend WithEvents Panel1 As Panel
@@ -522,22 +527,23 @@ Partial Class ControlFunciones
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnEditarFuncion As Button
     Friend WithEvents Label7 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmbEditarPelicula As ComboBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents cmbEditarHorario As ComboBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents cmbEditarSala As ComboBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents cmbEditarFuncion As ComboBox
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents ComboBox6 As ComboBox
+    Friend WithEvents cmbEliminarFuncion As ComboBox
     Friend WithEvents Panel4 As Panel
     Friend WithEvents btnEliminarFuncion As Button
     Friend WithEvents Panel5 As Panel
     Friend WithEvents btnRegresar As Button
+    Friend WithEvents dptNuevaFecha As DateTimePicker
+    Friend WithEvents dtpEditarFecha As DateTimePicker
 End Class

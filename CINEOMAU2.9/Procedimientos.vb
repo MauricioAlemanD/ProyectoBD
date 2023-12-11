@@ -2,6 +2,8 @@
 
 Module Procedimientos
 
+    Public IDPeliculaGlobal As Integer
+
     Public Sub nuevoUsuario(
         ByVal IDUsuario As String,
         ByVal ContraseñaUsuario As String,
@@ -30,7 +32,7 @@ Module Procedimientos
         ByVal contraseña As String
         )
 
-        Conexion.sentenciaSQL = "EXEC nuevo_loginCompleto '" & correo & "', '" & contraseña & "';"
+        Conexion.sentenciaSQL = "EXEC nuevo_loginCompleto2 '" & correo & "', '" & contraseña & "';"
         conectar()
         Conexion.comandoSQL = New SqlCommand(Conexion.sentenciaSQL, Conexion.conexionGeneral)
         Conexion.respuestaSQL = Conexion.comandoSQL.ExecuteNonQuery
