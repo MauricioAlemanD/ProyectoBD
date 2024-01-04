@@ -49,6 +49,12 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -59,6 +65,12 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="zxing, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.9\lib\net48\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.9.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>packages\ZXing.Net.0.16.9\lib\net48\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -81,10 +93,22 @@
     <Compile Include="ControlFunciones.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ControlPeliculas.Designer.vb">
+      <DependentUpon>ControlPeliculas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPeliculas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmAdministrador.Designer.vb">
       <DependentUpon>FrmAdministrador.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmAdministrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBoleto.Designer.vb">
+      <DependentUpon>FrmBoleto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBoleto.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmControlUsuario.Designer.vb">
@@ -93,22 +117,16 @@
     <Compile Include="FrmControlUsuario.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmEstenos.Designer.vb">
-      <DependentUpon>FrmEstenos.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmEstenos.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="FrmInicioSesion.Designer.vb">
       <DependentUpon>FrmInicioSesion.vb</DependentUpon>
     </Compile>
     <Compile Include="FrmInicioSesion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmProductos.Designer.vb">
-      <DependentUpon>FrmProductos.vb</DependentUpon>
+    <Compile Include="FrmPago.Designer.vb">
+      <DependentUpon>FrmPago.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmProductos.vb">
+    <Compile Include="FrmPago.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmRegistros.vb">
@@ -158,20 +176,23 @@
     <EmbeddedResource Include="ControlFunciones.resx">
       <DependentUpon>ControlFunciones.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ControlPeliculas.resx">
+      <DependentUpon>ControlPeliculas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAdministrador.resx">
       <DependentUpon>FrmAdministrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBoleto.resx">
+      <DependentUpon>FrmBoleto.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmControlUsuario.resx">
       <DependentUpon>FrmControlUsuario.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmEstenos.resx">
-      <DependentUpon>FrmEstenos.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmInicioSesion.resx">
       <DependentUpon>FrmInicioSesion.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmProductos.resx">
-      <DependentUpon>FrmProductos.vb</DependentUpon>
+    <EmbeddedResource Include="FrmPago.resx">
+      <DependentUpon>FrmPago.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistros.resx">
       <DependentUpon>FrmRegistros.vb</DependentUpon>
@@ -202,6 +223,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\Imagen de WhatsApp 2023-11-21 a las 20.04.23_dce970fa.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -215,6 +237,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\asientoDisponible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

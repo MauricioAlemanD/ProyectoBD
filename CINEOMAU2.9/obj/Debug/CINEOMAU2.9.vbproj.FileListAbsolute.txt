@@ -89,9 +89,7 @@ C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2.9.vbpro
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.ControlFunciones.resources
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.FrmAdministrador.resources
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.FrmControlUsuario.resources
-C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.FrmEstenos.resources
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.FrmInicioSesion.resources
-C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.FrmProductos.resources
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.FrmRegistros.resources
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.FrmSeleccionAsientos.resources
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.FrmUsuario.resources
@@ -101,3 +99,17 @@ C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2.9.vbpro
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2.9.exe
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2.9.xml
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2.9.pdb
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\zxing.dll
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\zxing.presentation.dll
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\zxing.xml
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\zxing.presentation.xml
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2.9.vbproj.CopyComplete
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.FrmPago.resources
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.FrmBoleto.resources
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\PdfSharp.Charting.dll
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\PdfSharp.dll
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\PdfSharp.xml
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\PdfSharp.Charting.xml
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.ControlPeliculas.resources

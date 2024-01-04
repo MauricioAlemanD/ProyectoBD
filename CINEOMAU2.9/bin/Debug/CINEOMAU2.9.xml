@@ -42,6 +42,11 @@ CINEOMAU2.9
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:CINEOMAU2._9.My.Resources.Resources.LOGO2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:CINEOMAU2._9.My.Resources.Resources.pantallaSala">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

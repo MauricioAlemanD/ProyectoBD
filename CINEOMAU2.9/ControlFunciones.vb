@@ -45,6 +45,11 @@ Public Class ControlFunciones
 
         actualizacion()
 
+        cmbNuevaSala.Text = ""
+        dptNuevaFecha.Text = ""
+        cmbNuevoHorario.Text = ""
+        cmbNuevaPelicula.Text = ""
+
     End Sub
 
     Public Sub actualizacion()

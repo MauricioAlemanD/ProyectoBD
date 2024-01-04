@@ -24,21 +24,23 @@ Partial Class FrmUsuario
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lblIDUsuario = New System.Windows.Forms.Label()
+        Me.lblNombre = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lblApellidoMaterno = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lblApellidoPaterno = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.lblTelefono = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.lblFechaNacimiento = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
+        Me.lblSexo = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.lblCorreoElectronico = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnRegresar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -63,27 +65,26 @@ Partial Class FrmUsuario
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Id usuario"
         '
-        'Label3
+        'lblIDUsuario
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(16, 97)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(79, 19)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Id usuario"
+        Me.lblIDUsuario.AutoSize = True
+        Me.lblIDUsuario.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblIDUsuario.ForeColor = System.Drawing.Color.White
+        Me.lblIDUsuario.Location = New System.Drawing.Point(16, 97)
+        Me.lblIDUsuario.Name = "lblIDUsuario"
+        Me.lblIDUsuario.Size = New System.Drawing.Size(0, 19)
+        Me.lblIDUsuario.TabIndex = 3
         '
-        'Label4
+        'lblNombre
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(16, 145)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 19)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Nombre"
+        Me.lblNombre.AutoSize = True
+        Me.lblNombre.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNombre.ForeColor = System.Drawing.Color.White
+        Me.lblNombre.Location = New System.Drawing.Point(16, 145)
+        Me.lblNombre.Name = "lblNombre"
+        Me.lblNombre.Size = New System.Drawing.Size(65, 19)
+        Me.lblNombre.TabIndex = 5
+        Me.lblNombre.Text = "Nombre"
         '
         'Label5
         '
@@ -96,16 +97,16 @@ Partial Class FrmUsuario
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Nombre"
         '
-        'Label6
+        'lblApellidoMaterno
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(16, 240)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(129, 19)
-        Me.Label6.TabIndex = 9
-        Me.Label6.Text = "Apellido materno"
+        Me.lblApellidoMaterno.AutoSize = True
+        Me.lblApellidoMaterno.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblApellidoMaterno.ForeColor = System.Drawing.Color.White
+        Me.lblApellidoMaterno.Location = New System.Drawing.Point(16, 240)
+        Me.lblApellidoMaterno.Name = "lblApellidoMaterno"
+        Me.lblApellidoMaterno.Size = New System.Drawing.Size(129, 19)
+        Me.lblApellidoMaterno.TabIndex = 9
+        Me.lblApellidoMaterno.Text = "Apellido materno"
         '
         'Label7
         '
@@ -118,16 +119,16 @@ Partial Class FrmUsuario
         Me.Label7.TabIndex = 8
         Me.Label7.Text = "Apellido materno"
         '
-        'Label8
+        'lblApellidoPaterno
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(16, 192)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(124, 19)
-        Me.Label8.TabIndex = 7
-        Me.Label8.Text = "Apellido paterno"
+        Me.lblApellidoPaterno.AutoSize = True
+        Me.lblApellidoPaterno.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblApellidoPaterno.ForeColor = System.Drawing.Color.White
+        Me.lblApellidoPaterno.Location = New System.Drawing.Point(16, 192)
+        Me.lblApellidoPaterno.Name = "lblApellidoPaterno"
+        Me.lblApellidoPaterno.Size = New System.Drawing.Size(124, 19)
+        Me.lblApellidoPaterno.TabIndex = 7
+        Me.lblApellidoPaterno.Text = "Apellido paterno"
         '
         'Label9
         '
@@ -140,16 +141,16 @@ Partial Class FrmUsuario
         Me.Label9.TabIndex = 6
         Me.Label9.Text = "Apellido paterno"
         '
-        'Label10
+        'lblTelefono
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(16, 431)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(71, 19)
-        Me.Label10.TabIndex = 17
-        Me.Label10.Text = "Telefono"
+        Me.lblTelefono.AutoSize = True
+        Me.lblTelefono.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTelefono.ForeColor = System.Drawing.Color.White
+        Me.lblTelefono.Location = New System.Drawing.Point(16, 431)
+        Me.lblTelefono.Name = "lblTelefono"
+        Me.lblTelefono.Size = New System.Drawing.Size(71, 19)
+        Me.lblTelefono.TabIndex = 17
+        Me.lblTelefono.Text = "Telefono"
         '
         'Label11
         '
@@ -162,16 +163,16 @@ Partial Class FrmUsuario
         Me.Label11.TabIndex = 16
         Me.Label11.Text = "Telefono"
         '
-        'Label12
+        'lblFechaNacimiento
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(16, 383)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(156, 19)
-        Me.Label12.TabIndex = 15
-        Me.Label12.Text = "Fecha de nacimiento"
+        Me.lblFechaNacimiento.AutoSize = True
+        Me.lblFechaNacimiento.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblFechaNacimiento.ForeColor = System.Drawing.Color.White
+        Me.lblFechaNacimiento.Location = New System.Drawing.Point(16, 383)
+        Me.lblFechaNacimiento.Name = "lblFechaNacimiento"
+        Me.lblFechaNacimiento.Size = New System.Drawing.Size(156, 19)
+        Me.lblFechaNacimiento.TabIndex = 15
+        Me.lblFechaNacimiento.Text = "Fecha de nacimiento"
         '
         'Label13
         '
@@ -184,16 +185,16 @@ Partial Class FrmUsuario
         Me.Label13.TabIndex = 14
         Me.Label13.Text = "Fecha de nacimiento"
         '
-        'Label14
+        'lblSexo
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(16, 336)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(44, 19)
-        Me.Label14.TabIndex = 13
-        Me.Label14.Text = "Sexo"
+        Me.lblSexo.AutoSize = True
+        Me.lblSexo.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSexo.ForeColor = System.Drawing.Color.White
+        Me.lblSexo.Location = New System.Drawing.Point(16, 336)
+        Me.lblSexo.Name = "lblSexo"
+        Me.lblSexo.Size = New System.Drawing.Size(44, 19)
+        Me.lblSexo.TabIndex = 13
+        Me.lblSexo.Text = "Sexo"
         '
         'Label15
         '
@@ -206,16 +207,16 @@ Partial Class FrmUsuario
         Me.Label15.TabIndex = 12
         Me.Label15.Text = "Sexo"
         '
-        'Label16
+        'lblCorreoElectronico
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(16, 288)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(136, 19)
-        Me.Label16.TabIndex = 11
-        Me.Label16.Text = "Correo electronico"
+        Me.lblCorreoElectronico.AutoSize = True
+        Me.lblCorreoElectronico.Font = New System.Drawing.Font("Roboto Lt", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCorreoElectronico.ForeColor = System.Drawing.Color.White
+        Me.lblCorreoElectronico.Location = New System.Drawing.Point(16, 288)
+        Me.lblCorreoElectronico.Name = "lblCorreoElectronico"
+        Me.lblCorreoElectronico.Size = New System.Drawing.Size(136, 19)
+        Me.lblCorreoElectronico.TabIndex = 11
+        Me.lblCorreoElectronico.Text = "Correo electronico"
         '
         'Label17
         '
@@ -228,27 +229,49 @@ Partial Class FrmUsuario
         Me.Label17.TabIndex = 10
         Me.Label17.Text = "Correo electronico"
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Location = New System.Drawing.Point(284, 478)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(110, 5)
+        Me.Panel1.TabIndex = 53
+        '
+        'btnRegresar
+        '
+        Me.btnRegresar.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnRegresar.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegresar.ForeColor = System.Drawing.Color.White
+        Me.btnRegresar.Location = New System.Drawing.Point(284, 458)
+        Me.btnRegresar.Name = "btnRegresar"
+        Me.btnRegresar.Size = New System.Drawing.Size(110, 27)
+        Me.btnRegresar.TabIndex = 52
+        Me.btnRegresar.Text = "Regresar"
+        Me.btnRegresar.UseVisualStyleBackColor = False
+        '
         'FrmUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(193, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(406, 497)
-        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.btnRegresar)
+        Me.Controls.Add(Me.lblTelefono)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.lblFechaNacimiento)
         Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.lblSexo)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.lblCorreoElectronico)
         Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.lblApellidoMaterno)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.lblApellidoPaterno)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lblIDUsuario)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FrmUsuario"
@@ -260,19 +283,21 @@ Partial Class FrmUsuario
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lblIDUsuario As Label
+    Friend WithEvents lblNombre As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
+    Friend WithEvents lblApellidoMaterno As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
+    Friend WithEvents lblApellidoPaterno As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
+    Friend WithEvents lblTelefono As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
+    Friend WithEvents lblFechaNacimiento As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents Label14 As Label
+    Friend WithEvents lblSexo As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents Label16 As Label
+    Friend WithEvents lblCorreoElectronico As Label
     Friend WithEvents Label17 As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents btnRegresar As Button
 End Class

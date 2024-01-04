@@ -30,10 +30,6 @@ Partial Class FrmAdministrador
         Me.btnNuevaFuncion = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnNuevaPelicula = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.btnNuevoComestible = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.btnNuevoUsuario = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.btnNuevoEmpleado = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -121,50 +117,10 @@ Partial Class FrmAdministrador
         Me.btnNuevaPelicula.Text = "Control peliculas"
         Me.btnNuevaPelicula.UseVisualStyleBackColor = False
         '
-        'Panel2
-        '
-        Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Location = New System.Drawing.Point(316, 157)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(171, 5)
-        Me.Panel2.TabIndex = 132
-        '
-        'btnNuevoComestible
-        '
-        Me.btnNuevoComestible.BackColor = System.Drawing.Color.Black
-        Me.btnNuevoComestible.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNuevoComestible.ForeColor = System.Drawing.Color.White
-        Me.btnNuevoComestible.Location = New System.Drawing.Point(316, 135)
-        Me.btnNuevoComestible.Name = "btnNuevoComestible"
-        Me.btnNuevoComestible.Size = New System.Drawing.Size(171, 27)
-        Me.btnNuevoComestible.TabIndex = 133
-        Me.btnNuevoComestible.Text = "Control comestibles"
-        Me.btnNuevoComestible.UseVisualStyleBackColor = False
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.White
-        Me.Panel3.Location = New System.Drawing.Point(493, 157)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(146, 5)
-        Me.Panel3.TabIndex = 134
-        '
-        'btnNuevoUsuario
-        '
-        Me.btnNuevoUsuario.BackColor = System.Drawing.Color.Black
-        Me.btnNuevoUsuario.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNuevoUsuario.ForeColor = System.Drawing.Color.White
-        Me.btnNuevoUsuario.Location = New System.Drawing.Point(493, 135)
-        Me.btnNuevoUsuario.Name = "btnNuevoUsuario"
-        Me.btnNuevoUsuario.Size = New System.Drawing.Size(146, 27)
-        Me.btnNuevoUsuario.TabIndex = 135
-        Me.btnNuevoUsuario.Text = "Control usuario"
-        Me.btnNuevoUsuario.UseVisualStyleBackColor = False
-        '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.White
-        Me.Panel4.Location = New System.Drawing.Point(645, 157)
+        Me.Panel4.Location = New System.Drawing.Point(316, 157)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(146, 5)
         Me.Panel4.TabIndex = 136
@@ -174,7 +130,7 @@ Partial Class FrmAdministrador
         Me.btnNuevoEmpleado.BackColor = System.Drawing.Color.Black
         Me.btnNuevoEmpleado.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNuevoEmpleado.ForeColor = System.Drawing.Color.White
-        Me.btnNuevoEmpleado.Location = New System.Drawing.Point(645, 135)
+        Me.btnNuevoEmpleado.Location = New System.Drawing.Point(316, 135)
         Me.btnNuevoEmpleado.Name = "btnNuevoEmpleado"
         Me.btnNuevoEmpleado.Size = New System.Drawing.Size(146, 27)
         Me.btnNuevoEmpleado.TabIndex = 137
@@ -190,10 +146,6 @@ Partial Class FrmAdministrador
         Me.ClientSize = New System.Drawing.Size(803, 203)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.btnNuevoEmpleado)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.btnNuevoUsuario)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.btnNuevoComestible)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnNuevaPelicula)
         Me.Controls.Add(Me.Panel9)
@@ -218,10 +170,6 @@ Partial Class FrmAdministrador
     Friend WithEvents btnNuevaFuncion As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnNuevaPelicula As Button
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents btnNuevoComestible As Button
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents btnNuevoUsuario As Button
     Friend WithEvents Panel4 As Panel
     Friend WithEvents btnNuevoEmpleado As Button
 End Class

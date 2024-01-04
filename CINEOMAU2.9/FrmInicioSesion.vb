@@ -28,6 +28,8 @@ Public Class FrmInicioSesion
 
         Try
             conectarUsuario()
+            busquedaUsuario(txtId.Text)
+
             FrmControlUsuario.Show()
             Me.Hide()
         Catch ex As Exception

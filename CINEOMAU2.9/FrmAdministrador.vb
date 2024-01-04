@@ -3,17 +3,11 @@
         btnNuevaFuncion.FlatStyle = FlatStyle.Flat
         btnNuevaFuncion.FlatAppearance.BorderSize = 0
 
-        btnNuevoComestible.FlatStyle = FlatStyle.Flat
-        btnNuevoComestible.FlatAppearance.BorderSize = 0
-
         btnNuevaPelicula.FlatStyle = FlatStyle.Flat
         btnNuevaPelicula.FlatAppearance.BorderSize = 0
 
         btnNuevoEmpleado.FlatStyle = FlatStyle.Flat
         btnNuevoEmpleado.FlatAppearance.BorderSize = 0
-
-        btnNuevoUsuario.FlatStyle = FlatStyle.Flat
-        btnNuevoUsuario.FlatAppearance.BorderSize = 0
 
         btnRegresar.FlatStyle = FlatStyle.Flat
         btnRegresar.FlatAppearance.BorderSize = 0
@@ -26,7 +20,8 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnNuevaPelicula.Click
-
+        ControlPeliculas.Show()
+        Me.Close()
     End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
@@ -35,6 +30,12 @@
 
     Private Sub btnNuevaFuncion_Click(sender As Object, e As EventArgs) Handles btnNuevaFuncion.Click
         ControlFunciones.Show()
+        Me.Hide()
+
+
+    End Sub
+
+    Private Sub btnNuevoUsuario_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

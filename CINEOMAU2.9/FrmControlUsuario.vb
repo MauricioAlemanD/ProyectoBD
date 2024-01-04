@@ -4,10 +4,6 @@ Public Class FrmControlUsuario
     Private Sub FrmControlUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnCartelera.FlatStyle = FlatStyle.Flat
         btnCartelera.FlatAppearance.BorderSize = 0
-        btnProductos.FlatStyle = FlatStyle.Flat
-        btnProductos.FlatAppearance.BorderSize = 0
-        btnEstrenos.FlatStyle = FlatStyle.Flat
-        btnEstrenos.FlatAppearance.BorderSize = 0
         btnBuscarFunciones.FlatStyle = FlatStyle.Flat
         btnBuscarFunciones.FlatAppearance.BorderSize = 0
         btnBuscarFiltro.FlatStyle = FlatStyle.Flat
@@ -36,8 +32,7 @@ Public Class FrmControlUsuario
 
     End Sub
 
-    Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
-        FrmProductos.Show()
+    Private Sub btnProductos_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
@@ -47,27 +42,31 @@ Public Class FrmControlUsuario
     End Sub
 
     Private Sub btnSeleccionarFuncion_Click(sender As Object, e As EventArgs) Handles btnSeleccionarFuncion.Click
-        Try
-            If dvgCartelera.SelectedRows.Count > 0 Then
+
+        If dvgCartelera.SelectedRows.Count > 0 Then
+                ' Obten el valor de la primera columna de la fila seleccionada
                 Dim valorPrimeraColumna As String = dvgCartelera.SelectedRows(0).Cells(0).Value.ToString()
 
+                ' Asigna el valor a la variable global
+                Procedimientos.IDFuncionGlobal = valorPrimeraColumna
+
+                ' Abre el formulario FrmSeleccionAsientos
+                FrmSeleccionAsientos.Show()
+                Me.Hide()
             Else
                 MessageBox.Show("Selecciona una función antes de continuar.")
             End If
-            FrmSeleccionAsientos.Show()
-            Me.Hide()
-        Catch ex As Exception
-            MsgBox("No has seleccionado una función")
-        End Try
+
     End Sub
 
-    Private Sub btnEstrenos_Click(sender As Object, e As EventArgs) Handles btnEstrenos.Click
-        FrmEstenos.Show()
+    Private Sub btnEstrenos_Click(sender As Object, e As EventArgs)
+
         Me.Hide()
     End Sub
 
     Private Sub btnInformacionUsuario_Click(sender As Object, e As EventArgs) Handles btnInformacionUsuario.Click
-
+        FrmUsuario.Show()
+        Me.Hide()
     End Sub
 
     Public Sub Actualizar()

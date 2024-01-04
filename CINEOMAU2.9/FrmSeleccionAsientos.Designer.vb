@@ -25,12 +25,11 @@ Partial Class FrmSeleccionAsientos
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.nmpNumeroEntradas = New System.Windows.Forms.NumericUpDown()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.cmbHoraFuncion = New System.Windows.Forms.ComboBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lblHora = New System.Windows.Forms.Label()
+        Me.lblPelicula = New System.Windows.Forms.Label()
+        Me.lblDuracion = New System.Windows.Forms.Label()
+        Me.lblClasificacion = New System.Windows.Forms.Label()
+        Me.lblGenero = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
@@ -47,7 +46,9 @@ Partial Class FrmSeleccionAsientos
         Me.btnPagar = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnRegresar = New System.Windows.Forms.Button()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lblTotal = New System.Windows.Forms.Label()
+        Me.lblAsientos = New System.Windows.Forms.Label()
+        Me.lblPrecioBoleto = New System.Windows.Forms.Label()
         CType(Me.nmpNumeroEntradas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,70 +95,60 @@ Partial Class FrmSeleccionAsientos
         Me.nmpNumeroEntradas.Size = New System.Drawing.Size(74, 20)
         Me.nmpNumeroEntradas.TabIndex = 37
         '
-        'Label2
+        'lblHora
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(166, 142)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(122, 19)
-        Me.Label2.TabIndex = 38
-        Me.Label2.Text = "Hora de función"
+        Me.lblHora.AutoSize = True
+        Me.lblHora.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHora.ForeColor = System.Drawing.Color.White
+        Me.lblHora.Location = New System.Drawing.Point(166, 142)
+        Me.lblHora.Name = "lblHora"
+        Me.lblHora.Size = New System.Drawing.Size(126, 19)
+        Me.lblHora.TabIndex = 38
+        Me.lblHora.Text = "Hora de función:"
         '
-        'cmbHoraFuncion
+        'lblPelicula
         '
-        Me.cmbHoraFuncion.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(163, Byte), Integer))
-        Me.cmbHoraFuncion.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmbHoraFuncion.FormattingEnabled = True
-        Me.cmbHoraFuncion.Location = New System.Drawing.Point(294, 140)
-        Me.cmbHoraFuncion.Name = "cmbHoraFuncion"
-        Me.cmbHoraFuncion.Size = New System.Drawing.Size(121, 21)
-        Me.cmbHoraFuncion.TabIndex = 39
+        Me.lblPelicula.AutoSize = True
+        Me.lblPelicula.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPelicula.ForeColor = System.Drawing.Color.White
+        Me.lblPelicula.Location = New System.Drawing.Point(168, 57)
+        Me.lblPelicula.Name = "lblPelicula"
+        Me.lblPelicula.Size = New System.Drawing.Size(69, 19)
+        Me.lblPelicula.TabIndex = 40
+        Me.lblPelicula.Text = "Pelicula:"
         '
-        'Label4
+        'lblDuracion
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(168, 57)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(69, 19)
-        Me.Label4.TabIndex = 40
-        Me.Label4.Text = "Pelicula:"
+        Me.lblDuracion.AutoSize = True
+        Me.lblDuracion.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDuracion.ForeColor = System.Drawing.Color.White
+        Me.lblDuracion.Location = New System.Drawing.Point(166, 99)
+        Me.lblDuracion.Name = "lblDuracion"
+        Me.lblDuracion.Size = New System.Drawing.Size(78, 19)
+        Me.lblDuracion.TabIndex = 41
+        Me.lblDuracion.Text = "Duración:"
         '
-        'Label5
+        'lblClasificacion
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(166, 99)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(78, 19)
-        Me.Label5.TabIndex = 41
-        Me.Label5.Text = "Duración:"
+        Me.lblClasificacion.AutoSize = True
+        Me.lblClasificacion.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblClasificacion.ForeColor = System.Drawing.Color.White
+        Me.lblClasificacion.Location = New System.Drawing.Point(474, 57)
+        Me.lblClasificacion.Name = "lblClasificacion"
+        Me.lblClasificacion.Size = New System.Drawing.Size(104, 19)
+        Me.lblClasificacion.TabIndex = 42
+        Me.lblClasificacion.Text = "Clasificación:"
         '
-        'Label6
+        'lblGenero
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(474, 57)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(104, 19)
-        Me.Label6.TabIndex = 42
-        Me.Label6.Text = "Clasificación:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(474, 99)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(64, 19)
-        Me.Label7.TabIndex = 43
-        Me.Label7.Text = "Genero:"
+        Me.lblGenero.AutoSize = True
+        Me.lblGenero.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGenero.ForeColor = System.Drawing.Color.White
+        Me.lblGenero.Location = New System.Drawing.Point(474, 99)
+        Me.lblGenero.Name = "lblGenero"
+        Me.lblGenero.Size = New System.Drawing.Size(64, 19)
+        Me.lblGenero.TabIndex = 43
+        Me.lblGenero.Text = "Genero:"
         '
         'Panel1
         '
@@ -338,16 +329,38 @@ Partial Class FrmSeleccionAsientos
         Me.btnRegresar.Text = "Regresar"
         Me.btnRegresar.UseVisualStyleBackColor = False
         '
-        'Label8
+        'lblTotal
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(21, 417)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(54, 19)
-        Me.Label8.TabIndex = 50
-        Me.Label8.Text = "Total: "
+        Me.lblTotal.AutoSize = True
+        Me.lblTotal.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotal.ForeColor = System.Drawing.Color.White
+        Me.lblTotal.Location = New System.Drawing.Point(21, 417)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(50, 19)
+        Me.lblTotal.TabIndex = 50
+        Me.lblTotal.Text = "Total:"
+        '
+        'lblAsientos
+        '
+        Me.lblAsientos.AutoSize = True
+        Me.lblAsientos.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAsientos.ForeColor = System.Drawing.Color.White
+        Me.lblAsientos.Location = New System.Drawing.Point(630, 57)
+        Me.lblAsientos.Name = "lblAsientos"
+        Me.lblAsientos.Size = New System.Drawing.Size(100, 19)
+        Me.lblAsientos.TabIndex = 51
+        Me.lblAsientos.Text = "Disponibles: "
+        '
+        'lblPrecioBoleto
+        '
+        Me.lblPrecioBoleto.AutoSize = True
+        Me.lblPrecioBoleto.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPrecioBoleto.ForeColor = System.Drawing.Color.White
+        Me.lblPrecioBoleto.Location = New System.Drawing.Point(474, 22)
+        Me.lblPrecioBoleto.Name = "lblPrecioBoleto"
+        Me.lblPrecioBoleto.Size = New System.Drawing.Size(131, 19)
+        Me.lblPrecioBoleto.TabIndex = 52
+        Me.lblPrecioBoleto.Text = "Precio individual:"
         '
         'FrmSeleccionAsientos
         '
@@ -355,18 +368,19 @@ Partial Class FrmSeleccionAsientos
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(193, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 458)
-        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.lblPrecioBoleto)
+        Me.Controls.Add(Me.lblAsientos)
+        Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnRegresar)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.btnPagar)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.cmbHoraFuncion)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lblGenero)
+        Me.Controls.Add(Me.lblClasificacion)
+        Me.Controls.Add(Me.lblDuracion)
+        Me.Controls.Add(Me.lblPelicula)
+        Me.Controls.Add(Me.lblHora)
         Me.Controls.Add(Me.nmpNumeroEntradas)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
@@ -395,12 +409,11 @@ Partial Class FrmSeleccionAsientos
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents nmpNumeroEntradas As NumericUpDown
-    Friend WithEvents Label2 As Label
-    Friend WithEvents cmbHoraFuncion As ComboBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
+    Friend WithEvents lblHora As Label
+    Friend WithEvents lblPelicula As Label
+    Friend WithEvents lblDuracion As Label
+    Friend WithEvents lblClasificacion As Label
+    Friend WithEvents lblGenero As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox3 As PictureBox
@@ -416,5 +429,7 @@ Partial Class FrmSeleccionAsientos
     Friend WithEvents btnPagar As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnRegresar As Button
-    Friend WithEvents Label8 As Label
+    Friend WithEvents lblTotal As Label
+    Friend WithEvents lblAsientos As Label
+    Friend WithEvents lblPrecioBoleto As Label
 End Class
