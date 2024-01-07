@@ -76,4 +76,8 @@ Public Class FrmRegistros
             Return correoElectronico
         End If
     End Function
+
+    Private Sub Label24_Click(sender As Object, e As EventArgs) Handles Label24.Click
+
+    End Sub
 End Class

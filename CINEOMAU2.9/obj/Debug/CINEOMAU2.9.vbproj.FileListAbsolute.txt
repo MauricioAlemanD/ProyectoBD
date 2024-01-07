@@ -113,3 +113,4 @@ C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\PdfSharp.Charting
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\de\PdfSharp.resources.dll
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\bin\Debug\de\PdfSharp.Charting.resources.dll
 C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.ControlPeliculas.resources
+C:\Users\Mau\Documents\GitHub\ProyectoBD\CINEOMAU2.9\obj\Debug\CINEOMAU2._9.FrmControlEmpleado.resources

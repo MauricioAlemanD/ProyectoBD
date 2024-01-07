@@ -43,6 +43,7 @@ Public Class FrmInicioSesion
     End Sub
 
     Function ObtenerNombreUsuario(correoElectronico As String) As String
+
         Dim indiceArroba As Integer = correoElectronico.IndexOf("@")
 
         If indiceArroba >= 0 Then
@@ -50,5 +51,6 @@ Public Class FrmInicioSesion
         Else
             Return correoElectronico
         End If
+
     End Function
 End Class

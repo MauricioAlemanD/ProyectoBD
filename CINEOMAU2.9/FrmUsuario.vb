@@ -37,7 +37,7 @@ Public Class FrmUsuario
     End Sub
 
     Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
-        FrmControlUsuario.ShowDialog()
+        FrmControlUsuario.Show()
         Me.Close()
     End Sub
 End Class

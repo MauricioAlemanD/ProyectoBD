@@ -20,7 +20,9 @@ Public Class ControlFunciones
     End Sub
 
     Private Sub btnRegresar_Click(sender As Object, e As EventArgs) Handles btnRegresar.Click
+        FrmAdministrador.Show()
         Me.Hide()
+
     End Sub
 
     Private Sub btnBuscarFuncion_Click(sender As Object, e As EventArgs) Handles btnBuscarFuncion.Click

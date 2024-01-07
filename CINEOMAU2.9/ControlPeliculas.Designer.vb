@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ControlPeliculas
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,32 +20,35 @@ Partial Class ControlPeliculas
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.dvgPeliculas = New System.Windows.Forms.DataGridView()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtTituloPelicula = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtDuracionMinutos = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.cmbGenero = New System.Windows.Forms.ComboBox()
         Me.cmbClasificacion = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnNuevaPelicula = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnRegresar = New System.Windows.Forms.Button()
         CType(Me.dvgPeliculas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dvgPeliculas
         '
+        Me.dvgPeliculas.BackgroundColor = System.Drawing.Color.White
         Me.dvgPeliculas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dvgPeliculas.Location = New System.Drawing.Point(11, 95)
         Me.dvgPeliculas.Name = "dvgPeliculas"
-        Me.dvgPeliculas.Size = New System.Drawing.Size(500, 176)
+        Me.dvgPeliculas.Size = New System.Drawing.Size(586, 176)
         Me.dvgPeliculas.TabIndex = 41
         '
         'Label13
@@ -93,13 +96,13 @@ Partial Class ControlPeliculas
         Me.Label3.Text = "Título pelicula"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'TextBox1
+        'txtTituloPelicula
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Roboto", 12.0!)
-        Me.TextBox1.Location = New System.Drawing.Point(137, 331)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(374, 27)
-        Me.TextBox1.TabIndex = 167
+        Me.txtTituloPelicula.Font = New System.Drawing.Font("Roboto", 12.0!)
+        Me.txtTituloPelicula.Location = New System.Drawing.Point(137, 331)
+        Me.txtTituloPelicula.Name = "txtTituloPelicula"
+        Me.txtTituloPelicula.Size = New System.Drawing.Size(460, 27)
+        Me.txtTituloPelicula.TabIndex = 167
         '
         'Label2
         '
@@ -113,13 +116,13 @@ Partial Class ControlPeliculas
         Me.Label2.Text = "Duración minutos"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'TextBox2
+        'txtDuracionMinutos
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Roboto", 12.0!)
-        Me.TextBox2.Location = New System.Drawing.Point(154, 365)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(357, 27)
-        Me.TextBox2.TabIndex = 170
+        Me.txtDuracionMinutos.Font = New System.Drawing.Font("Roboto", 12.0!)
+        Me.txtDuracionMinutos.Location = New System.Drawing.Point(154, 365)
+        Me.txtDuracionMinutos.Name = "txtDuracionMinutos"
+        Me.txtDuracionMinutos.Size = New System.Drawing.Size(443, 27)
+        Me.txtDuracionMinutos.TabIndex = 170
         '
         'Label4
         '
@@ -142,7 +145,7 @@ Partial Class ControlPeliculas
         Me.cmbGenero.FormattingEnabled = True
         Me.cmbGenero.Location = New System.Drawing.Point(78, 434)
         Me.cmbGenero.Name = "cmbGenero"
-        Me.cmbGenero.Size = New System.Drawing.Size(433, 27)
+        Me.cmbGenero.Size = New System.Drawing.Size(519, 27)
         Me.cmbGenero.TabIndex = 173
         '
         'cmbClasificacion
@@ -154,7 +157,7 @@ Partial Class ControlPeliculas
         Me.cmbClasificacion.FormattingEnabled = True
         Me.cmbClasificacion.Location = New System.Drawing.Point(137, 399)
         Me.cmbClasificacion.Name = "cmbClasificacion"
-        Me.cmbClasificacion.Size = New System.Drawing.Size(374, 27)
+        Me.cmbClasificacion.Size = New System.Drawing.Size(460, 27)
         Me.cmbClasificacion.TabIndex = 172
         '
         'Label5
@@ -174,7 +177,7 @@ Partial Class ControlPeliculas
         Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.Location = New System.Drawing.Point(16, 494)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(495, 5)
+        Me.Panel1.Size = New System.Drawing.Size(581, 5)
         Me.Panel1.TabIndex = 175
         '
         'btnNuevaPelicula
@@ -184,26 +187,49 @@ Partial Class ControlPeliculas
         Me.btnNuevaPelicula.ForeColor = System.Drawing.Color.White
         Me.btnNuevaPelicula.Location = New System.Drawing.Point(16, 472)
         Me.btnNuevaPelicula.Name = "btnNuevaPelicula"
-        Me.btnNuevaPelicula.Size = New System.Drawing.Size(495, 27)
+        Me.btnNuevaPelicula.Size = New System.Drawing.Size(581, 27)
         Me.btnNuevaPelicula.TabIndex = 176
         Me.btnNuevaPelicula.Text = "Añadir funcón"
         Me.btnNuevaPelicula.UseVisualStyleBackColor = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Location = New System.Drawing.Point(16, 530)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(581, 5)
+        Me.Panel2.TabIndex = 177
+        '
+        'btnRegresar
+        '
+        Me.btnRegresar.BackColor = System.Drawing.Color.Black
+        Me.btnRegresar.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegresar.ForeColor = System.Drawing.Color.White
+        Me.btnRegresar.Location = New System.Drawing.Point(16, 508)
+        Me.btnRegresar.Name = "btnRegresar"
+        Me.btnRegresar.Size = New System.Drawing.Size(581, 27)
+        Me.btnRegresar.TabIndex = 178
+        Me.btnRegresar.Text = "Regresar"
+        Me.btnRegresar.UseVisualStyleBackColor = False
         '
         'ControlPeliculas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(525, 694)
+        Me.ClientSize = New System.Drawing.Size(609, 547)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.btnRegresar)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.btnNuevaPelicula)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.cmbGenero)
         Me.Controls.Add(Me.cmbClasificacion)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtDuracionMinutos)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtTituloPelicula)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label13)
@@ -224,13 +250,15 @@ Partial Class ControlPeliculas
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtTituloPelicula As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtDuracionMinutos As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents cmbGenero As ComboBox
     Friend WithEvents cmbClasificacion As ComboBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnNuevaPelicula As Button
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents btnRegresar As Button
 End Class

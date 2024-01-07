@@ -111,6 +111,12 @@
     <Compile Include="FrmBoleto.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmControlEmpleado.Designer.vb">
+      <DependentUpon>FrmControlEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmControlEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmControlUsuario.Designer.vb">
       <DependentUpon>FrmControlUsuario.vb</DependentUpon>
     </Compile>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBoleto.resx">
       <DependentUpon>FrmBoleto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmControlEmpleado.resx">
+      <DependentUpon>FrmControlEmpleado.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmControlUsuario.resx">
       <DependentUpon>FrmControlUsuario.vb</DependentUpon>

@@ -51,9 +51,9 @@ Partial Class FrmRegistros
         Me.Label13 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.lbl1 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.gpbSexo.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -361,24 +361,13 @@ Partial Class FrmRegistros
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nombre(s)"
         '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.ForeColor = System.Drawing.Color.Navy
-        Me.Label24.Location = New System.Drawing.Point(601, 1166)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(45, 13)
-        Me.Label24.TabIndex = 25
-        Me.Label24.Text = "Label24"
-        Me.Label24.Visible = False
-        '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
         Me.Panel2.Controls.Add(Me.lbl1)
         Me.Panel2.Location = New System.Drawing.Point(98, 43)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(516, 69)
+        Me.Panel2.Size = New System.Drawing.Size(516, 63)
         Me.Panel2.TabIndex = 26
         '
         'lbl1
@@ -392,6 +381,17 @@ Partial Class FrmRegistros
         Me.lbl1.TabIndex = 1
         Me.lbl1.Text = "REGISTRO"
         Me.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.ForeColor = System.Drawing.Color.Navy
+        Me.Label24.Location = New System.Drawing.Point(606, 1170)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(10, 13)
+        Me.Label24.TabIndex = 25
+        Me.Label24.Text = " "
+        Me.Label24.Visible = False
         '
         'FrmRegistros
         '
@@ -445,7 +445,7 @@ Partial Class FrmRegistros
     Friend WithEvents txtCiudad As TextBox
     Friend WithEvents Label20 As Label
     Friend WithEvents btnRegistrar As Button
-    Friend WithEvents Label24 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents lbl1 As Label
+    Friend WithEvents Label24 As Label
 End Class
